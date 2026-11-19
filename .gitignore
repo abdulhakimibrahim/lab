@@ -1,0 +1,47 @@
+# VM disks
+*.qcow2
+*.img
+*.iso
+# Vagrant
+.vagrant/
+# Docker volumes
+data/
+# Secrets
+*.key
+*.pem
+.env
+# Snapshots (not tracked by git; use snapper)
+.snapshots/
+# Python
+__pycache__/
+*.pyc
+
+# Nested git repos — do not track
+docker/wazuh-docker/
+pentest-copilot/
+
+# VM disks (already ignored but be explicit)
+vms/iso/*.qcow2
+vms/disks/*.qcow2
+vms/iso/*.vmdk
+vms/iso/*.7z
+vms/iso/*.zip
+
+# Nested git repos — do not track
+docker/wazuh-docker/
+pentest-copilot/
+
+# VM disks (already ignored but be explicit)
+vms/iso/*.qcow2
+vms/disks/*.qcow2
+vms/iso/*.vmdk
+vms/iso/*.7z
+vms/iso/*.zip
+
+# Corrupt git backup (recovery artifact)
+.git-corrupt-backup/
+
+# Real env files (never commit)
+.env
+*.env
+!.env.example

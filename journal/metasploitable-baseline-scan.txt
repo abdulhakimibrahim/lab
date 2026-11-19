@@ -1,0 +1,2 @@
+# Nmap 7.991 scan initiated Mon Nov 16 14:06:25 2026 as: /usr/lib/nmap/nmap --privileged -sV -oN /home/kali/lab-journal/metasploitable-baseline-scan.txt 10.10.20.10
+# Nmap done at Mon Nov 16 14:06:26 2026 -- 1 IP address (0 hosts up) scanned in 1.88 seconds

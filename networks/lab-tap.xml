@@ -1,0 +1,9 @@
+<network>
+  <name>lab-tap</name>
+  <bridge name='virbr-tap' stp='on' delay='0'/>
+  <ip address='10.10.70.1' netmask='255.255.255.0'>
+    <dhcp>
+      <range start='10.10.70.100' end='10.10.70.200'/>
+    </dhcp>
+  </ip>
+</network>

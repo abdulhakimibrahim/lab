@@ -1,0 +1,12 @@
+<network>
+  <name>lab-victim</name>
+  <bridge name="virbr-victim" stp="on" delay="0"/>
+  <dnsmasq>
+    <bind-interfaces/>
+  </dnsmasq>
+  <ip address="10.10.20.1" netmask="255.255.255.0">
+    <dhcp>
+      <range start="10.10.20.100" end="10.10.20.200"/>
+    </dhcp>
+  </ip>
+</network>

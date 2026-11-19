@@ -1,0 +1,15 @@
+<network>
+  <name>lab-mgmt</name>
+  <forward mode="nat">
+    <nat><port start="1024" end="65535"/></nat>
+  </forward>
+  <bridge name="virbr-mgmt" stp="off" delay="0"/>
+  <dnsmasq>
+    <bind-interfaces/>
+  </dnsmasq>
+  <ip address="10.10.10.1" netmask="255.255.255.0">
+    <dhcp>
+      <range start="10.10.10.100" end="10.10.10.200"/>
+    </dhcp>
+  </ip>
+</network>

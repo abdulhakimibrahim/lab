@@ -1,0 +1,9 @@
+<network>
+  <name>lab-app</name>
+  <bridge name='virbr-app' stp='on' delay='0'/>
+  <ip address='10.10.50.1' netmask='255.255.255.0'>
+    <dhcp>
+      <range start='10.10.50.100' end='10.10.50.200'/>
+    </dhcp>
+  </ip>
+</network>

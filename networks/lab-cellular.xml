@@ -1,0 +1,9 @@
+<network>
+  <name>lab-cellular</name>
+  <bridge name='virbr-cellular' stp='on' delay='0'/>
+  <ip address='10.10.60.1' netmask='255.255.255.0'>
+    <dhcp>
+      <range start='10.10.60.100' end='10.10.60.200'/>
+    </dhcp>
+  </ip>
+</network>

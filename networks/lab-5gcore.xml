@@ -1,0 +1,9 @@
+<network>
+  <name>lab-5gcore</name>
+  <bridge name='virbr-5gcore' stp='on' delay='0'/>
+  <ip address='10.10.40.1' netmask='255.255.255.0'>
+    <dhcp>
+      <range start='10.10.40.100' end='10.10.40.200'/>
+    </dhcp>
+  </ip>
+</network>
